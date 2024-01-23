@@ -1,0 +1,13 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+public class RegisterViewModel
+{
+    // Existing properties
+
+    [Required(ErrorMessage = "Full name is required.")]
+    public string FullName { get; set; }
+
+    [Required(ErrorMessage = "Contact number is required.")]
+    public string ContactNumber { get; set; }
+}
